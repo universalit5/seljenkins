@@ -29,8 +29,8 @@ public class SeleniumGridDemo {
             case "chrome":
                 System.out.println("IsHeadLess Mode ? "+ isHeadless);
                 ChromeOptions options = new ChromeOptions();
-               // options.addArguments("--headless");
-                 options.setHeadless(isHeadless);
+                options.addArguments("--headless");
+               //  options.setHeadless(isHeadless);
                 driver = new ChromeDriver(options);
                 driver.manage().window().maximize();
                 driver.manage().deleteAllCookies();
@@ -41,8 +41,8 @@ public class SeleniumGridDemo {
             case "firefox":
                 System.out.println("IsHeadLess Mode ? "+ isHeadless);
                 FirefoxOptions options2 = new FirefoxOptions();
-                // options.addArguments("--headless");
-                options2.setHeadless(isHeadless);
+                options.addArguments("--headless");
+               // options2.setHeadless(isHeadless);
                 driver = new FirefoxDriver(options2);
                 driver = new FirefoxDriver();
                 driver.manage().window().maximize();
