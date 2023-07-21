@@ -27,7 +27,7 @@ public class SeleniumGridDemo {
         boolean isHeadless = Boolean.parseBoolean(System.getProperty("headless"));
         switch (browser){
             case "chrome":
-
+                System.out.println("IsHeadLess Mode ? "+ isHeadless);
                 ChromeOptions options = new ChromeOptions();
                // options.addArguments("--headless");
                  options.setHeadless(isHeadless);
@@ -39,6 +39,7 @@ public class SeleniumGridDemo {
                 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
                 break;
             case "firefox":
+                System.out.println("IsHeadLess Mode ? "+ isHeadless);
                 FirefoxOptions options2 = new FirefoxOptions();
                 // options.addArguments("--headless");
                 options2.setHeadless(isHeadless);
