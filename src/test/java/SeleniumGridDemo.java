@@ -41,7 +41,7 @@ public class SeleniumGridDemo {
             case "firefox":
                 System.out.println("IsHeadLess Mode ? "+ isHeadless);
                 FirefoxOptions options2 = new FirefoxOptions();
-                options.addArguments("--headless");
+                options2.addArguments("--headless");
                // options2.setHeadless(isHeadless);
                 driver = new FirefoxDriver(options2);
                 driver = new FirefoxDriver();
